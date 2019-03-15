@@ -59,15 +59,15 @@ async function giveAnalysis(){
         
         sortSet.push({
         name:   item, 
-        time:   stats[item].timetaken, 
+        Avgtime:   stats[item].timetaken/stats[item].count, 
         failed: stats[item].failed,
         count:  stats[item].count
         });
     }  
 
-    sortSet.sort((a,b) =>(a.time > b.time ? -1 : 1)); 
+    sortSet.sort((a,b) =>(a.Avgtime > b.Avgtime ? -1 : 1)); 
 
-    sortSet.sort((a,b) => a.failed > b.failed ? -1: 1);
+    sortSet.sort((a,b) => (a.failed > b.failed ? -1: 1));
 
     console.log(sortSet);
 }
