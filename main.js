@@ -10,7 +10,7 @@ if( process.env.NODE_ENV != "test")
 {
  
     var files=[];
-    files=glob.sync('../TestReports/**/*.xml');
+    files=glob.sync('/home/vagrant/SurefireReports/**/*.xml');
     // console.log(files);
     var count=0;
 
