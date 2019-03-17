@@ -65,7 +65,7 @@ async function giveAnalysis(){
         });
     }  
 
-    sortSet.sort((a,b) =>(a.Avgtime > b.Avgtime ? -1 : 1)); 
+    sortSet.sort((a,b) =>(a.Avgtime > b.Avgtime ? 1 : -1)); 
 
     sortSet.sort((a,b) => (a.failed > b.failed ? -1: 1));
 
