@@ -84,7 +84,7 @@ function readResults(result)
         tests.push({
         name:   testcase['$'].name, 
         time:   testcase['$'].time, 
-        status: testcase.hasOwnProperty('failure') ? "failed": "passed"
+        status: testcase.hasOwnProperty('failure') || testcase.hasOwnProperty('error') ? "failed": "passed"
         });
     }  
 tests.sort(function(a, b) { 
