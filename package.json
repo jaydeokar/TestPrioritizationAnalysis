@@ -12,7 +12,7 @@
     "bluebird": "^3.5.0",
     "mvn": "^3.5.0",
     "sort-json-array": "^0.1.7",
-    "xml2js": "^0.4.17"
+    "xml2js": "^0.4.22"
   },
   "devDependencies": {
     "chai": "^4.1.2",
